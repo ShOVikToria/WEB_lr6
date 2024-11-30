@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container_mobile {
+    display: none;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr 6fr auto;
+    width: 100%;
+    height: 100%;
+}
+
+.block {
+    padding: 10px;
+    border: 1px solid #1a0457;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: rgba(118, 212, 255, 0.8);
+    align-items: center;
+}
+
+.two {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    background-color: rgba(91, 164, 247, 0.8);
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    background-color: rgba(91, 164, 247, 0.8);
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    padding: 10px; 
+} 
+
+.four {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(94, 103, 233, 0.9);
+    align-items: center;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(184, 215, 253);
+    text-align: justify;
+    flex-direction: column;
+}
+
+.six {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    background-color: rgba(118, 212, 255, 0.8);
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+} 
+
+.menu{
+    font-size:xx-large;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Comic;
+    margin-top: 60%;
+}
+
+.menu > ul > li{
+    list-style: none;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.menu > ul{    
+    margin-top: -100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(3, 3, 163);
+}
+
+h1{
+    font-size: 400%;
+    font-style: italic;
+    font-family: Comic;
+    color: rgb(24, 128, 247);
+    text-align: left;
+}
+
+h2{
+    font-size: 250%;
+    font-style: italic;
+    font-family: Comic;
+    color: rgb(0, 39, 145);
+}
+
+p{
+    font-size: 150%;
+    font-style: italic;
+    font-family: Comic;
+    color: rgb(2, 25, 88);
+    text-align: justify;
+}
+
+.cooking {
+    max-height: 30%;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.cat_chef{
+    margin-left: 2%;
+    margin-right: 1%;
+    width: 8%;
+    border-radius: 20%;
+}
+
+.chef{
+    margin-left: 5%;
+    margin-right: 1%;
+    width: 17%;
+    border-radius: 50%;
+}
+
+/* Основні стилі для каруселі */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        display: none;
+    }
+
+    .container_mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .one {
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .two {
+        align-items: flex-start;
+    }
+    
+    .three {
+        width: 100%;
+        flex-shrink: 0;
+        flex-direction: row;
+    }
+    
+    .four {
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .five {
+        text-align: justify;
+        padding: 20px;
+        flex-grow: 1;        
+    }
+    
+    .six {
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .menu {
+        font-size: xx-large;
+        font-style: italic;
+        font-weight: bold;
+        font-family: Comic;
+        margin-top: 0;
+    }
+    
+    .menu > ul > li {
+        list-style: none;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        display: inline-block;
+    }
+
+    .menu > ul{
+        margin-top: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 200%;
+    }
+    
+    .cooking {
+        max-height: 98%;
+        width: 32%;
+        border-radius: 20%;
+        padding: 5px;
+    }
+    
+    .cat_chef {
+        height: 100px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    
+    .chef {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set a max width if needed */
+    margin: 0 auto; /* Centering the carousel */
+    overflow: hidden; /* Hide images outside the carousel */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}

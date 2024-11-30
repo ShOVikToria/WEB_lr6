@@ -1,0 +1,181 @@
+﻿@{
+    ViewData["Title"] = "Смачні рецепти";
+}
+
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        alert('@ViewBag.Message');
+    </script>
+}
+
+<div class="container_mobile">
+    <div class="block one">
+        <img src="/pictures/chef.png" alt="chef icon" class="chef">
+        <h1>Смачні рецепти</h1>
+    </div>
+
+    <div class="two">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Головна</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("FirstCourses", "Home")">Перші страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SecondCourses", "Home")">Основні страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SideDishes", "Home")">Гарніри</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Deserts", "Home")">Десерти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="block four">
+        <h2>Головна</h2>
+    </div>
+    <div class="block three">
+        <img src="/pictures/cooking1.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking2.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking3.jpg" alt="cooking" class="cooking">
+    </div>
+
+    <div class="block five">
+        <p>Оберіть елементи для каруселі:</p>
+        <br>
+        <br>
+        @using (Html.BeginForm("SaveFile", "Home", FormMethod.Post))
+        {
+            <label for="fileSelect">Обрати файл:</label>
+            <select id="fileSelect" name="filename" required>
+                <option value="">Оберіть файл</option>
+                <option value="/pictures/borshch.jpg">Борщ</option>
+                <option value="/pictures/cheesecake.jpg">Чізкейк</option>
+                <option value="/pictures/chery_pie.jpg">Вишневий пиріг</option>
+                <option value="/pictures/fish_soup.jpg">Рибний суп</option>
+                <option value="/pictures/kotlety.jpg">Котлети</option>
+                <option value="/pictures/mashroom_soup.jpg">Грибний суп</option>
+                <option value="/pictures/napoleon.jpg">Наполеон</option>
+                <option value="/pictures/peper.jpg">Перець</option>
+                <option value="/pictures/potato.jpg">Картопля пюре</option>
+                <option value="/pictures/rice.jpg">Рис</option>
+                <option value="/pictures/steak.jpg">Стейк</option>
+                <option value="/pictures/vegetables.jpg">Овочі</option>
+            </select>
+            <br />
+
+            <br />
+
+            <label for="fileOrder">Порядковий номер:</label>
+            <input type="number" id="fileOrder" name="order" required min="1" />
+            <br />
+
+            <br />
+
+            <button type="submit">Зберегти</button>
+        }
+
+        @using (Html.BeginForm("ClearData", "Home", FormMethod.Post))
+        {
+            <button type="submit">Очистити дані</button>
+        }
+        <br>
+        <br>
+        <a href="@Url.Action("Carousel", "Home")">Перейти до каруселі</a>
+    </div>
+    <div class="block six">
+        <h1>Смачні рецепти</h1>
+        <img src="/pictures/cat_chef.jpg" alt="cat_chef" class="cat_chef">
+    </div>
+</div>
+<div class="container">
+    <div class="block one">
+        <img src="/pictures/chef.png" alt="chef icon" class="chef">
+        <h1>Смачні рецепти</h1>
+    </div>
+
+    <div class="two">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Головна</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("FirstCourses", "Home")">Перші страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SecondCourses", "Home")">Основні страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SideDishes", "Home")">Гарніри</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Deserts", "Home")">Десерти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="block three">
+        <img src="/pictures/cooking1.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking2.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking3.jpg" alt="cooking" class="cooking">
+    </div>
+    <div class="block four">
+        <h2>Головна</h2>
+    </div>
+    <div class="block five">
+        <p>Оберіть елементи для каруселі:</p>
+        </br>
+        </br>
+        @using (Html.BeginForm("SaveFile", "Home", FormMethod.Post))
+        {
+            <label for="fileSelect">Обрати файл:</label>
+            <select id="fileSelect" name="filename" required>
+                <option value="">Оберіть файл</option>
+                <option value="/pictures/borshch.jpg">Борщ</option>
+                <option value="/pictures/cheesecake.jpg">Чізкейк</option>
+                <option value="/pictures/chery_pie.jpg">Вишневий пиріг</option>
+                <option value="/pictures/fish_soup.jpg">Рибний суп</option>
+                <option value="/pictures/kotlety.jpg">Котлети</option>
+                <option value="/pictures/mashroom_soup.jpg">Грибний суп</option>
+                <option value="/pictures/napoleon.jpg">Наполеон</option>
+                <option value="/pictures/peper.jpg">Перець</option>
+                <option value="/pictures/potato.jpg">Картопля пюре</option>
+                <option value="/pictures/rice.jpg">Рис</option>
+                <option value="/pictures/steak.jpg">Стейк</option>
+                <option value="/pictures/vegetables.jpg">Овочі</option>
+            </select>
+            <br />
+
+            <br />
+
+            <label for="fileOrder">Порядковий номер:</label>
+            <input type="number" id="fileOrder" name="order" required min="1" />
+            <br />
+
+            <br />
+
+            <button type="submit">Зберегти</button>
+        }
+
+        @using (Html.BeginForm("ClearData", "Home", FormMethod.Post))
+        {
+            <button type="submit">Очистити дані</button>
+        }
+
+
+        </br>
+        </br>
+        <a href="@Url.Action("Carousel", "Home")">Перейти до каруселі</a>
+    </div>
+    <div class="block six">
+        <h1>Смачні рецепти</h1>
+        <img src="/pictures/cat_chef.jpg" alt="cat_chef" class="cat_chef">
+    </div>
+</div>

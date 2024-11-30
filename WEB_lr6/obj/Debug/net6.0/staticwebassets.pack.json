@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WEB_lr6.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WEB_lr6.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\js\\carousel.js",
+      "PackagePath": "staticwebassets\\js\\carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\borshch.jpg",
+      "PackagePath": "staticwebassets\\pictures\\borshch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\cat_chef.jpg",
+      "PackagePath": "staticwebassets\\pictures\\cat_chef.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\cheesecake.jpg",
+      "PackagePath": "staticwebassets\\pictures\\cheesecake.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\chef.png",
+      "PackagePath": "staticwebassets\\pictures\\chef.png"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\cherry_pie.jpg",
+      "PackagePath": "staticwebassets\\pictures\\cherry_pie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\cooking1.jpg",
+      "PackagePath": "staticwebassets\\pictures\\cooking1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\cooking2.jpg",
+      "PackagePath": "staticwebassets\\pictures\\cooking2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\cooking3.jpg",
+      "PackagePath": "staticwebassets\\pictures\\cooking3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\fish_soup.jpg",
+      "PackagePath": "staticwebassets\\pictures\\fish_soup.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\kotlety.jpg",
+      "PackagePath": "staticwebassets\\pictures\\kotlety.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\mashroom_soup.jpg",
+      "PackagePath": "staticwebassets\\pictures\\mashroom_soup.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\napoleon.jpg",
+      "PackagePath": "staticwebassets\\pictures\\napoleon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\peper.jpg",
+      "PackagePath": "staticwebassets\\pictures\\peper.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\potato.jpg",
+      "PackagePath": "staticwebassets\\pictures\\potato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\rice.jpg",
+      "PackagePath": "staticwebassets\\pictures\\rice.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\steak.jpg",
+      "PackagePath": "staticwebassets\\pictures\\steak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\l4min4t\\source\\repos\\WEB_lr6\\WEB_lr6\\wwwroot\\pictures\\vegetables.jpg",
+      "PackagePath": "staticwebassets\\pictures\\vegetables.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WEB_lr6.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WEB_lr6.props",
+      "PackagePath": "build\\WEB_lr6.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WEB_lr6.props",
+      "PackagePath": "buildMultiTargeting\\WEB_lr6.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WEB_lr6.props",
+      "PackagePath": "buildTransitive\\WEB_lr6.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

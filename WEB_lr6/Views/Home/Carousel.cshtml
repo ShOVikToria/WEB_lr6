@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Смачні рецепти";
+    var savedData = ViewBag.SavedData as List<string>;
+}
+
+
+<div class="container_mobile">
+    <div class="block one">
+        <img src="/pictures/chef.png" alt="chef icon" class="chef">
+        <h1>Смачні рецепти</h1>
+    </div>
+
+    <div class="two">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Головна</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("FirstCourses", "Home")">Перші страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SecondCourses", "Home")">Основні страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SideDishes", "Home")">Гарніри</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Deserts", "Home")">Десерти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="block four">
+        <h2>Головна</h2>
+    </div>
+    <div class="block three">
+        <img src="/pictures/cooking1.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking2.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking3.jpg" alt="cooking" class="cooking">
+    </div>
+
+    <div class="block five">
+        <div id="carouselContainer" class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                @if (ViewBag.SavedData != null && ViewBag.SavedData.Count > 0)
+                {
+                    foreach (var imagePath in ViewBag.SavedData)
+                    {
+                        <div class="carousel-item-m">
+                            <img src="@imagePath" alt="Image" class="d-block w-100">
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>Немає страв для відображення!</p>
+                }
+            </div>
+
+            <button class="carousel-control carousel-control-prev" id="prevBtnm">&lt;</button>
+            <button class="carousel-control carousel-control-next" id="nextBtnm">&gt;</button>
+        </div>
+
+        <a href="@Url.Action("Index", "Home")">Повернутись до налаштування каруселі</a>
+    </div>
+
+
+    <div class="block six">
+        <h1>Смачні рецепти</h1>
+        <img src="/pictures/cat_chef.jpg" alt="cat_chef" class="cat_chef">
+    </div>
+</div>
+<div class="container">
+    <div class="block one">
+        <img src="/pictures/chef.png" alt="chef icon" class="chef">
+        <h1>Смачні рецепти</h1>
+    </div>
+
+    <div class="two">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Головна</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("FirstCourses", "Home")">Перші страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SecondCourses", "Home")">Основні страви</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SideDishes", "Home")">Гарніри</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Deserts", "Home")">Десерти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="block three">
+        <img src="/pictures/cooking1.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking2.jpg" alt="cooking" class="cooking">
+        <img src="/pictures/cooking3.jpg" alt="cooking" class="cooking">
+    </div>
+    <div class="block four">
+        <h2>Головна</h2>
+    </div>
+    <div class="block five">
+        <div id="carouselContainer" class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                @if (ViewBag.SavedData != null && ViewBag.SavedData.Count > 0)
+                {
+                    foreach (var imagePath in ViewBag.SavedData)
+                    {
+                        <div class="carousel-item">
+                            <img style="width: 600px; height: 383.2px; object-fit: cover;" src="@imagePath" alt="Image" class="d-block w-100">
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>Немає страв для відображення!</p>
+                }
+            </div>
+
+            <button class="carousel-control carousel-control-prev" id="prevBtn">&lt;</button>
+            <button class="carousel-control carousel-control-next" id="nextBtn">&gt;</button>
+        </div>
+
+        <a href="@Url.Action("Index", "Home")">Повернутись до налаштування каруселі</a>
+    </div>
+
+    <div class="block six">
+        <h1>Смачні рецепти</h1>
+        <img src="/pictures/cat_chef.jpg" alt="cat_chef" class="cat_chef">
+    </div>
+</div>
+<script src="/js/carousel.js"></script>
